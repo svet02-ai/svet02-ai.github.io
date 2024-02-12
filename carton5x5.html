@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego 5x5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload = "fillBoxesWithRandomNumbers(); nombresInput()">
+
+    <div class="container4">
+        <!-- Encabezado -->
+        <header class="header">
+          <h1 class="header__title">COMENZÓ EL JUEGO!</h1>
+        </header>
+    
+    <p id="contador-turno"></p>
+
+    <select id="mySelect">
+        <option value="jugador0" id="Opcion0">Jugador 1</option>
+        <option value="jugador1" id="Opcion1">Jugador 2</option>
+        <option value="jugador2" id="Opcion3">Jugador 3</option>
+        <option value="jugador3" id="Opcion4">Jugador 4</option>
+      </select>
+
+    <h3 id="playerTitle1">Jugador 1</h3>
+
+    <div class="tablon5" id="tablon0">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <div class="box">11</div>
+        <div class="box">12</div>
+        <div class="box">13</div>
+        <div class="box">14</div>
+        <div class="box">15</div>
+        <div class="box">16</div>
+        <div class="box">17</div>
+        <div class="box">18</div>
+        <div class="box">19</div>
+        <div class="box">20</div>
+        <div class="box">21</div>
+        <div class="box">22</div>
+        <div class="box">23</div>
+        <div class="box">24</div>
+        <div class="box">25</div>
+
+    </div>
+    
+    <h3 id="playerTitle2">Jugador 2</h3>
+    <div class="tablon5" id="tablon1">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <div class="box">11</div>
+        <div class="box">12</div>
+        <div class="box">13</div>
+        <div class="box">14</div>
+        <div class="box">15</div>
+        <div class="box">16</div>
+        <div class="box">17</div>
+        <div class="box">18</div>
+        <div class="box">19</div>
+        <div class="box">20</div>
+        <div class="box">21</div>
+        <div class="box">22</div>
+        <div class="box">23</div>
+        <div class="box">24</div>
+        <div class="box">25</div>
+
+    </div>
+
+    <h3 id="playerTitle3">Jugador 3</h3>
+    <div class="tablon5" id="tablon2">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <div class="box">11</div>
+        <div class="box">12</div>
+        <div class="box">13</div>
+        <div class="box">14</div>
+        <div class="box">15</div>
+        <div class="box">16</div>
+        <div class="box">17</div>
+        <div class="box">18</div>
+        <div class="box">19</div>
+        <div class="box">20</div>
+        <div class="box">21</div>
+        <div class="box">22</div>
+        <div class="box">23</div>
+        <div class="box">24</div>
+        <div class="box">25</div>
+
+    </div>
+
+    <h3 id="playerTitle4">Jugador 4</h3>
+    <div class="tablon5" id="tablon3">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <div class="box">11</div>
+        <div class="box">12</div>
+        <div class="box">13</div>
+        <div class="box">14</div>
+        <div class="box">15</div>
+        <div class="box">16</div>
+        <div class="box">17</div>
+        <div class="box">18</div>
+        <div class="box">19</div>
+        <div class="box">20</div>
+        <div class="box">21</div>
+        <div class="box">22</div>
+        <div class="box">23</div>
+        <div class="box">24</div>
+        <div class="box">25</div>
+
+                
+    </div>
+    
+    <a class="cantarNumero" href="/" onclick="bingo5()"><span class="cantarNumerospan">Bingo</span></a>
+
+    <p id="random-number-display"></p>
+
+    <a href="/" onclick="restart()"><button class="bn632-hover bn18">Reiniciar</button></a>
+    <a href="/" class="bn17" onclick="home()">Volver a Inicio</a>
+    <h3>Scoreboard</h3>
+    <div class="player-container">
+        <div class="player">
+            <strong>Player 1</strong>
+            <span id="player1-score">0</span>
+        </div>
+        <div class="player">
+            <strong>Player 2</strong>
+            <span id="player2-score">0</span>
+        </div>
+        <div class="player">
+            <strong>Player 3</strong>
+            <span id="player3-score">0</span>
+        </div>
+        <div class="player">
+            <strong>Player 4</strong>
+            <span id="player4-score">0</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

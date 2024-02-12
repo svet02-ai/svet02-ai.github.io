@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BINGO GAME</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body content ="width=device-width, initial-scale=1.0">
+    <!-- Contenedor vertical -->
+    <div class="container">
+      <!-- Encabezado -->
+      <header class="header">
+        <h1 class="header__title">BINGO GAME</h1>
+      </header>
+      <div class="inputBox">
+        <input id="userInput1" type="text" required="required">
+        <span>Nombre del Jugador 1</span>
+      </div>
+      <div class="inputBox">
+        <input id="userInput2" type="text" required="required">
+        <span>Nombre del Jugador 2</span>
+      </div>
+      <div class="inputBox">
+        <input id="userInput3" type="text" required="required">
+        <span>Nombre del Jugador 3</span>
+      </div>
+      <div class="inputBox">
+        <input id="userInput4" type="text" required="required">
+        <span>Nombre del Jugador 4</span>
+      </div>
+      <a class="bn31" href="/"><span class="bn31span" onclick="returnText()">Añadir</span></a>
+
+      <strong>Escoge tu tamaño de cartón</strong>
+
+      <div class="container2"> 
+        <a class="bn39" href="/" onclick="carton3x3()"><span class="bn39span">3x3</span></a> 
+        <a class="bn39" href="/" onclick="carton4x4()"><span class="bn39span">4x4</span></a>
+        <a class="bn39" href="/" onclick="carton5x5()"><span class="bn39span">5x5</span></a>
+      </div>
+
+      <script src="script.js"></script>
+    </body>
+    </html>
